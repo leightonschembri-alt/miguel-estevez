@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Miguel Estevez — BelAmi model showcase. 18+ only." />
+  <title>Miguel Estevez · BelAmi Model</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="age-locked">
+  <div class="age-gate" id="age-gate">
+    <div class="age-card">
+      <div class="kicker">Adults only</div>
+      <h1>Miguel Estevez</h1>
+      <p>This site showcases adult photography featuring Miguel Estevez. You must be 18+ to enter.</p>
+      <div class="age-actions">
+        <button class="btn btn-primary btn-block" id="age-enter" type="button">I am 18 or older — Enter</button>
+        <button class="btn btn-ghost btn-block" id="age-exit" type="button">Leave</button>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top">Miguel <span>Estevez</span></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#gallery" class="btn btn-primary" style="padding:0.55rem 1.15rem;font-size:0.8rem">View photos</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media">
+        <img src="https://files.catbox.moe/owzblm.jpg" alt="Miguel Estevez" />
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow">BelAmi · Model profile</div>
+        <h1>Miguel<br /><em>Estevez</em></h1>
+        <p class="lede">Charismatic BelAmi exclusive known for bright, sunlit sets and a signature smile from the late 2010s.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#gallery">Browse the gallery</a>
+          <a class="btn btn-ghost" href="#about">His story</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>52</strong><span>Studio stills</span></div>
+          <div class="stat"><strong>2015–19</strong><span>Active years</span></div>
+          <div class="stat"><strong>BelAmi</strong><span>Home studio</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="highlights" aria-hidden="true"><div class="highlights-track" id="highlights-track"></div></div>
+    <section class="about" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-portrait">
+          <img src="https://files.catbox.moe/591xhz.jpg" alt="Miguel Estevez" />
+          <div class="frame"></div>
+        </div>
+        <div class="about-body">
+          <div class="label" style="font-size:0.72rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem">About</div>
+          <h2>The face of a classic BelAmi era</h2>
+          <p><strong>Miguel Estevez</strong> rose through BelAmi as a standout model — warm brown eyes, dark hair, athletic build, and playful on-camera energy.</p>
+          <p>Active roughly from <strong>2015 to 2019</strong>, including GayVN-nominated work. Also credited as Roland Balko / Roland Lantos.</p>
+          <ul class="meta-list">
+            <li><span class="m-label">Studio</span><span class="m-value">BelAmi Online</span></li>
+            <li><span class="m-label">Height</span><span class="m-value">~180 cm / 5′11″</span></li>
+            <li><span class="m-label">Hair / Eyes</span><span class="m-value">Dark brown / Brown</span></li>
+            <li><span class="m-label">Recognition</span><span class="m-value">GayVN 2018 nominee</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="section-inner">
+        <div class="section-head">
+          <div class="label">Gallery</div>
+          <h2>Studio collection</h2>
+          <p>52 studio stills from his BelAmi sessions. Click any image to open the lightbox.</p>
+        </div>
+        <div class="gallery-toolbar">
+          <div class="filter-pills">
+            <button type="button" class="pill active" data-filter="all">All</button>
+            <button type="button" class="pill" data-filter="soft">Soft / clothed</button>
+            <button type="button" class="pill" data-filter="intimate">Intimate</button>
+            <button type="button" class="pill" data-filter="editorial">Editorial</button>
+          </div>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+    <section class="studio" id="studio">
+      <div class="section-inner">
+        <div class="studio-card">
+          <div class="text">
+            <div class="label" style="font-size:0.72rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem">The look</div>
+            <h2>Bright rooms. Real heat.</h2>
+            <p>Miguel’s signature sets leaned into BelAmi’s trademark aesthetic — white linens, open windows, Mediterranean light.</p>
+            <a class="btn btn-primary" href="#gallery">Back to photos</a>
+          </div>
+          <div class="visual"><img src="https://files.catbox.moe/2znjhv.jpg" alt="Miguel Estevez" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© Miguel Estevez fan showcase · Unofficial archive</p>
+      <p class="disclaimer">18+ only. Not affiliated with BelAmi Online. All rights belong to their respective owners.</p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
+    <img id="lightbox-img" src="" alt="" />
+    <button type="button" class="lightbox-next" id="lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
